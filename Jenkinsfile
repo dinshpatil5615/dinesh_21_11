@@ -19,7 +19,7 @@ pipeline {
         stage('Run Container') {
             steps {
                 sh '''
-                docker run -d --name simple-html-container -p 8080:80 simple-html-app
+                docker run -d --name simple-html-container -p 8000:80 simple-html-app
                 '''
             }
         }
